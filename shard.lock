@@ -1,0 +1,10 @@
+version: 1.0
+shards:
+  bitcoin:
+    github: jreinert/bitcoin.cr
+    commit: 53e342ac7f00773d9c94da3bca077f8332692178
+
+  radix:
+    github: luislavena/radix
+    version: 0.3.8
+

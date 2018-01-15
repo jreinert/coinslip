@@ -1,0 +1,19 @@
+name: coinslip
+version: 0.1.0
+
+authors:
+  - Joakim Reinert <mail@jreinert.com>
+
+targets:
+  coinslip:
+    main: src/coinslip.cr
+
+dependencies:
+  radix:
+    github: luislavena/radix
+  bitcoin:
+    github: jreinert/bitcoin.cr
+
+crystal: 0.24.1
+
+license: MIT
