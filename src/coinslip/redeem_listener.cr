@@ -29,8 +29,8 @@ module Coinslip
       loop do
         @ipfs.subscribe("redeem") do |message|
           redeem_request = RedeemRequest.from_json(message.data)
-          slip = slips[redeem_request.id]?
-          if slip
+          next if redeem_requests.includes?(redeem_request)
+          if slip = slips[redeem_request.id]?
             pay(slip, redeem_request)
           else
             wallet = Coinslip.wallet_for(redeem_request.currency)

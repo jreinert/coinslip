@@ -43,6 +43,8 @@ module Coinslip
     Config.instance.slip_storage_path
   )
 
+  Wallets::BTC.new("NobVasBoyzPoahujDoijnawyatgidd", "localhost", 18332)
+
   def self.wallet_for(currency : Currency)
     {% begin %}
     case currency

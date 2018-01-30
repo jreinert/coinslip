@@ -25,7 +25,11 @@ module Coinslip
       expose_errors: { type: Bool, default: false },
       ipfs_host: { type: String, default: "localhost" },
       ipfs_port: { type: Int32, default: 5001 },
-      currencies: { type: Array(Currency), converter: CurrenciesYAMLConverter }
+      currencies: {
+        type: Array(Currency),
+        converter: CurrenciesYAMLConverter,
+        default: [Currency::BTC]
+      }
     )
 
     @@instance : self?

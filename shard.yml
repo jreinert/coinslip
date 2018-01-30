@@ -13,6 +13,9 @@ dependencies:
     github: luislavena/radix
   bitcoin:
     github: jreinert/bitcoin.cr
+  baked_file_system:
+    github: jreinert/baked_file_system
+    branch: master
 
 crystal: 0.24.1
 

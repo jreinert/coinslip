@@ -16,6 +16,12 @@ module Coinslip
       end
     end
 
+    def includes?(item)
+      synchronize do
+        @container.has_key?(item.id)
+      end
+    end
+
     def delete(id)
       synchronize do
         @container.delete(id)

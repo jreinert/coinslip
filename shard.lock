@@ -1,5 +1,9 @@
 version: 1.0
 shards:
+  baked_file_system:
+    github: jreinert/baked_file_system
+    commit: 89bb96d213912a0c454f5a567015f67b365da7a9
+
   bitcoin:
     github: jreinert/bitcoin.cr
     commit: 53e342ac7f00773d9c94da3bca077f8332692178

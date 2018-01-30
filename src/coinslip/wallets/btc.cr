@@ -45,7 +45,7 @@ module Coinslip
           raise Error.new("Unsupported currency #{redeem_request.currency}")
         end
 
-        @client.import_address(
+        puts @client.import_address(
           redeem_request.address, redeem_request.id, true
         )
       end
